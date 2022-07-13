@@ -30,7 +30,7 @@
                 <div class="container" id="todoTasks"></div>
             </section>
             <!-- FinTablero - Tareas por hacer -->
-            
+
             <!-- Tablero - Tareas en progreso   -->
             <section class="container">
                 <h2 class="text-3xl font-bold"> En progreso</h2>
@@ -48,6 +48,52 @@
         </div>
     </main>
     <!-- Fin de Canva -->
+
+    <!-- Modal -->
+
+    <aside id="modalNewTask">
+        <div class="container">
+            <div class="form-container">
+                <h2>Nueva Tarea</h2>
+                <form id="formNewTask">
+                    <div class="row">
+                        <label for="titleTask">Titulo :</label>
+                        <input type="text" id="titleTask" name="titleTask" placeholder="Escribe un titulo descriptivo">
+                    </div>
+                    <div class="row">
+                        <label for="responsibleTask">Responsable :</label>
+                        <select name="responsibleTask" id="responsibleTask">
+                            <option value="">--Seleccionar--</option>
+                            <option value="user01">User 01</option>
+                            <option value="user02">User 02</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <label for="deadLineTask">Plazo entrega :</label>
+                        <select name="deadLineTask" id="deadLineTask">
+                            <option value="">--Seleccionar--</option>
+                            <option value="oneDay">1 día</option>
+                            <option value="twoDay">2 días</option>
+                            <option value="sevenDay">1 semana</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="buttons">
+                            <button class="button button-primary" type="submit">
+                                Guardar
+                            </button>
+                            <button class="button button-secondary" type="reset" id="btnCancelNewTask">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+    <!-- Final Modal -->
 
 </body>
 
