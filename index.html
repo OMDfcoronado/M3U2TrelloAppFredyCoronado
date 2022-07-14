@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="">
+<body class="h-screen">
+
     <!-- Encabezado -->
     <header class="">
         <div class="container flex flex-row mx-auto justify-between">
@@ -23,26 +24,26 @@
     <!-- Fin Encabezado -->
 
     <!-- Canva -->
-    <main class="container mx-auto h-screen">
-        <div class="container mx-auto columns-3 h-full">
+    <main class="container mx-auto h-full">
+        <div class="container mx-auto columns-3 gap-8 h-full">
             <!-- Tablero - Tareas por hacer -->
-            <section class="container h-full">
-                <h2 class="text-3xl font-bold"> Por Hacer</h2>
-                <div class="container h-max" id="todoTasks"></div>
+            <section class="h-full">
+                <h2 class="text-3xl font-bold "> Por Hacer</h2>
+                <div class="h-auto" id="todoTasks"> </div>
             </section>
             <!-- FinTablero - Tareas por hacer -->
-
+            <span class="break-before-column"></span>
             <!-- Tablero - Tareas en progreso   -->
-            <section class="container h-full">
+            <section class="h-full">
                 <h2 class="text-3xl font-bold"> En progreso</h2>
-                <div class="container" id="progressTasks"></div>
+                <div class="h-auto" id="progressTasks"></div>
             </section>
             <!-- Fin Tablero - Tareas en progreso   -->
 
             <!-- Tablero Tareas Finalizadas -->
-            <section class="container h-full">
+            <section class="h-full">
                 <h2 class="text-3xl font-bold">Finalizadas</h2>
-                <div class="container" id="doneTasks"></div>
+                <div class="h-auto" id="doneTasks"></div>
             </section>
             <!-- Fin Tablero Tareas Finalizadas -->
 
