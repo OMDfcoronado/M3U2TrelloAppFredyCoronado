@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trello oxigen</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="">
     <!-- Encabezado -->
-    <header>
-        <div class="l-container">
-            <img src="" alt="Trello App Logo" class="logo">
-            <button class="button button-primary">
+    <header class="">
+        <div class="container flex flex-row mx-auto justify-between">
+            <img src="" alt="Trello App Logo" class="">
+            <button class="btn btn-primary float-right ">
                 Crea una nueva tarea
             </button>
         </div>
@@ -22,25 +23,25 @@
     <!-- Fin Encabezado -->
 
     <!-- Canva -->
-    <main>
-        <div class="container">
+    <main class="container mx-auto h-screen">
+        <div class="container mx-auto columns-3 h-full">
             <!-- Tablero - Tareas por hacer -->
-            <section>
+            <section class="container h-full">
                 <h2 class="text-3xl font-bold"> Por Hacer</h2>
-                <div class="container" id="todoTasks"></div>
+                <div class="container h-max" id="todoTasks"></div>
             </section>
             <!-- FinTablero - Tareas por hacer -->
 
             <!-- Tablero - Tareas en progreso   -->
-            <section class="container">
+            <section class="container h-full">
                 <h2 class="text-3xl font-bold"> En progreso</h2>
                 <div class="container" id="progressTasks"></div>
             </section>
             <!-- Fin Tablero - Tareas en progreso   -->
 
             <!-- Tablero Tareas Finalizadas -->
-            <section>
-                <h2 class="text-3xl font-bold"> En progreso</h2>
+            <section class="container h-full">
+                <h2 class="text-3xl font-bold">Finalizadas</h2>
                 <div class="container" id="doneTasks"></div>
             </section>
             <!-- Fin Tablero Tareas Finalizadas -->
@@ -51,15 +52,17 @@
 
     <!-- Modal -->
 
-    <aside id="modalNewTask">
-        <div class="container">
+    <aside id="modalNewTask" class=" w-64 right-full">
+        <div class="container mx-auto">
             <div class="form-container">
                 <h2>Nueva Tarea</h2>
                 <form id="formNewTask">
+
                     <div class="row">
                         <label for="titleTask">Titulo :</label>
                         <input type="text" id="titleTask" name="titleTask" placeholder="Escribe un titulo descriptivo">
                     </div>
+
                     <div class="row">
                         <label for="responsibleTask">Responsable :</label>
                         <select name="responsibleTask" id="responsibleTask">
@@ -89,6 +92,7 @@
                             </button>
                         </div>
                     </div>
+
                 </form>
             </div>
         </div>

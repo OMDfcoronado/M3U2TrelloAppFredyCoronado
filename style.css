@@ -1,0 +1,15 @@
+div {
+    border: 1px black solid;
+}
+
+.btn {
+    color: whitesmoke;
+    padding: 0.5em ;
+    border-radius: 8px;
+    border-color: gray;
+    border-style: solid;
+}
+
+.btn-primary {
+    background-color: rgb(89, 152, 203);
+}
