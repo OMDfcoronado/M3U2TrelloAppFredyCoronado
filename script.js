@@ -2,31 +2,21 @@
 (() => {
 
     const buttonCreate = document.getElementById("createTask");
+    const buttonCancel = document.getElementById("btnCancelNewTask");
+    const modal = document.getElementById("modalNewTask");
     const showModal = () => {
-        swal({
-            title: "Crear una tarea nueva",
-            text: "¿Deseas crear una nueva tarea?",
-            icon: "info",
-            closeModal: true,
-            buttons: ['Cancelar', 'Guardar'],
-            cancel: {
-                text: "Cancelar",
-                value: null,
-                visible: false,
-                className: "",
-                closeModal: true,
-            },
-            confirm: {
-                text: "Guardar",
-                value: true,
-                visible: true,
-                className: "",
-                closeModal: true
-            }
-        })
+        modal.style.display = "block"
     }
-
+    const closeModal = () => {
+        window.onclick = function (event) {
+            if (event.target == modal || event.target == buttonCancel) {
+                modal.style.display = "none";
+            }
+        }
+    }
+    closeModal()
     buttonCreate.addEventListener('click', showModal, false);
+    buttonCancel.addEventListener('click', closeModal, false);
 
 })();
 //swal("Hola mundo")
