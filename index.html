@@ -16,7 +16,7 @@
     <header class="">
         <div class="container flex flex-row mx-auto justify-between">
             <img src="" alt="Trello App Logo" class="">
-            <button class="btn btn-primary float-right ">
+            <button class="btn btn-primary float-right" id="createTask">
                 Crea una nueva tarea
             </button>
         </div>
@@ -24,26 +24,26 @@
     <!-- Fin Encabezado -->
 
     <!-- Canva -->
-    <main class="container mx-auto h-full">
-        <div class="container mx-auto columns-3 gap-8 h-full">
+    <main class="container mx-auto h-full p-8" >
+        <div class="grid  grid-cols-3  justify-items-center">
             <!-- Tablero - Tareas por hacer -->
-            <section class="h-full">
+            <section class="panel-tasks">
                 <h2 class="text-3xl font-bold "> Por Hacer</h2>
-                <div class="h-auto" id="todoTasks"> </div>
+                <div class="container" id="todoTasks"> </div>
             </section>
             <!-- FinTablero - Tareas por hacer -->
-            <span class="break-before-column"></span>
+
             <!-- Tablero - Tareas en progreso   -->
-            <section class="h-full">
+            <section class="panel-tasks">
                 <h2 class="text-3xl font-bold"> En progreso</h2>
-                <div class="h-auto" id="progressTasks"></div>
+                <div class="" id="progressTasks"></div>
             </section>
             <!-- Fin Tablero - Tareas en progreso   -->
 
             <!-- Tablero Tareas Finalizadas -->
-            <section class="h-full">
+            <section class="panel-tasks">
                 <h2 class="text-3xl font-bold">Finalizadas</h2>
-                <div class="h-auto" id="doneTasks"></div>
+                <div class="" id="doneTasks"></div>
             </section>
             <!-- Fin Tablero Tareas Finalizadas -->
 
@@ -52,54 +52,58 @@
     <!-- Fin de Canva -->
 
     <!-- Modal -->
+    <div class="falseBackground">
+        <aside id="modalNewTask" class="container mx-auto my-40  w-2/3 ">
+            <div class="container mx-auto w-2/3 bg-slate-50" >
+                <div class="form-container mx-auto px-2 py-2">
+                    <h2 class="text-center">Nueva Tarea</h2>
+                    <form id="formNewTask">
 
-    <aside id="modalNewTask" class=" w-64 right-full">
-        <div class="container mx-auto">
-            <div class="form-container">
-                <h2>Nueva Tarea</h2>
-                <form id="formNewTask">
-
-                    <div class="row">
-                        <label for="titleTask">Titulo :</label>
-                        <input type="text" id="titleTask" name="titleTask" placeholder="Escribe un titulo descriptivo">
-                    </div>
-
-                    <div class="row">
-                        <label for="responsibleTask">Responsable :</label>
-                        <select name="responsibleTask" id="responsibleTask">
-                            <option value="">--Seleccionar--</option>
-                            <option value="user01">User 01</option>
-                            <option value="user02">User 02</option>
-                        </select>
-                    </div>
-
-                    <div class="row">
-                        <label for="deadLineTask">Plazo entrega :</label>
-                        <select name="deadLineTask" id="deadLineTask">
-                            <option value="">--Seleccionar--</option>
-                            <option value="oneDay">1 día</option>
-                            <option value="twoDay">2 días</option>
-                            <option value="sevenDay">1 semana</option>
-                        </select>
-                    </div>
-
-                    <div class="row">
-                        <div class="buttons">
-                            <button class="button button-primary" type="submit">
-                                Guardar
-                            </button>
-                            <button class="button button-secondary" type="reset" id="btnCancelNewTask">
-                                Cancelar
-                            </button>
+                        <div class="row">
+                            <label for="titleTask">Titulo :</label>
+                            <input class="w-64 float-right" type="text" id="titleTask" name="titleTask"
+                                placeholder="Escribe un titulo descriptivo">
                         </div>
-                    </div>
 
-                </form>
+                        <div class="row">
+                            <label for="responsibleTask">Responsable :</label>
+                            <select class="w-64 float-right" name="responsibleTask" id="responsibleTask">
+                                <option value="">--Seleccionar--</option>
+                                <option value="user01">User 01</option>
+                                <option value="user02">User 02</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label for="deadLineTask">Plazo entrega :</label>
+                            <select class="w-64 float-right" name="deadLineTask" id="deadLineTask">
+                                <option value="">--Seleccionar--</option>
+                                <option value="oneDay">1 día</option>
+                                <option value="twoDay">2 días</option>
+                                <option value="sevenDay">1 semana</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="flex justify-center justify-around py-1 space-x-1 mx-1">
+                                <button class="bg-red-300 w-1/2 rounded" type="reset" id="btnCancelNewTask">
+                                    Cancelar
+                                </button>
+                                <button class="bg-green-300 w-1/2 rounded" type="submit">
+                                    Guardar
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
             </div>
-        </div>
-    </aside>
-    <!-- Final Modal -->
+        </aside>
+    </div>
 
+    <!-- Final Modal -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
