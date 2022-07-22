@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Frontend",
+            "person": "Fredy",
+            "details": "Muchos detalles",
+            "state": "done",
+            "deadLine": 1658451740,
+            "created": 1657878979
+        },
+        {
+            "id": 2,
+            "title": "Backend",
+            "person": "Esteban",
+            "details": "Menos detalles",
+            "state": "to-do",
+            "deadLine": 1678451740,
+            "created": 1658451740
+        }
+    ]
+}

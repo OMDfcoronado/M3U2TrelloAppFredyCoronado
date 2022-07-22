@@ -1,3 +1,8 @@
+body{
+    background-color: rgba(249, 252, 255, 0.68);
+}
+
+
 div {
     border: 1px black solid;
 }
