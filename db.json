@@ -17,6 +17,15 @@
             "state": "to-do",
             "deadLine": 1678451740,
             "created": 1658451740
+        },
+        {
+            "id": 3,
+            "title": "Frontend",
+            "person": "Esteban",
+            "details": "Menos detalles",
+            "state": "in-progress",
+            "deadLine": 1678451740,
+            "created": 1658451740
         }
     ]
 }
