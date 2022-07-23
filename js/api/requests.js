@@ -21,7 +21,7 @@ const createTask = (task) => {
     let columnProgress = document.querySelector("#progressTasks");
     let columnDone = document.querySelector("#doneTasks");
 
-    newTask.classList.add("card-task")
+    newTask.classList.add("card-task", "my-1")
     taskTitle.classList.add("text-xl", "font-bold");
     taskResponsible.classList.add("font-bold");
     taskDate.classList.add("font-mono", "italic")
@@ -30,8 +30,8 @@ const createTask = (task) => {
     taskTitle.innerText = task.title;
     taskResponsible.innerHTML = `<span class=""> Responsable: </span> ${task.person}`;
     taskDetails.innerHTML = `<span class=""> Detalles: </span> ${task.details}`;
-    taskDate.innerHTML = `<span class=""> Plazo: </span> ${task.deadLine}`;
-    taskCreate.innerHTML = `<span class=""> Creación: </span> ${task.created}`;
+    taskDate.innerHTML = `<span class=""> Plazo: </span> ${dateFormat(task.deadLine)}`;
+    taskCreate.innerHTML = `<span class=""> Creación: </span> ${dateFormat(task.created)}`;
 
     newTask.appendChild(taskTitle);
     newTask.appendChild(taskResponsible);
