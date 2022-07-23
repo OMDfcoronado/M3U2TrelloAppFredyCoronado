@@ -26,12 +26,12 @@ section {
 .panel-tasks {
     margin-top: 1%;
     margin-bottom: 1%;
-    display: inline-block;
+    display: inline-block flex;
     align-items: center;
     width: auto;
     height: 45em;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
     overflow-y: scroll;
 }
 
@@ -58,5 +58,8 @@ section {
 }
 
 .card-task{
+    width: 20rem;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: aquamarine;
 }
