@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgba(249, 252, 255, 0.68);
 }
 
@@ -32,11 +32,10 @@ section {
     height: 45em;
     padding-left: 5%;
     padding-right: 5%;
-    overflow-y: scroll;
 }
 
 .falseBackground {
-    display: none ;
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -57,9 +56,13 @@ section {
 
 }
 
-.card-task{
+.card-task {
     width: 20rem;
     padding-left: 5%;
     padding-right: 5%;
     background-color: aquamarine;
+}
+
+.container-task {
+    overflow-y: scroll;
 }
