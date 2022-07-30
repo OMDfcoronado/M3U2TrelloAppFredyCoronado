@@ -46,6 +46,9 @@
                     d="M70,56c0,0-2.323,5.882-4,7s-6.247,1.333-8.065,0.461c-0.981-0.471-2.4-2.111-3.465-3.473 C53.607,60.544,52.337,61,50,61s-3.607-0.456-4.47-1.012c-1.065,1.362-2.484,3.002-3.465,3.473C40.247,64.333,35.677,64.118,34,63 s-4-7-4-7h-3c0,0,2.741,8.354,5,10c2.657,1.937,11.264,2.824,14,1c3-2,4-6,4-6s1,4,4,6c2.736,1.824,11.343,0.937,14-1 c2.259-1.646,5-10,5-10H70z">
                 </path>
             </svg>
+            <h1 class="text-3xl font-bold mt-6">
+                Trello Oxigen
+            </h1>
             <button class="btn btn-primary float-right" id="createTask">
                 Crea una nueva tarea
             </button>
@@ -55,25 +58,25 @@
 
     <!-- Canva -->
     <main class="container mx-auto h-full">
-        <div class="grid  grid-cols-3  justify-items-center">
+        <div class="container grid  grid-cols-3  justify-items-center ">
             <!-- Tablero - Tareas por hacer -->
             <section class="panel-tasks">
                 <h2 class="text-3xl font-bold pb-1"> Por Hacer</h2>
-                <div class="container-tasks h-full" id="todoTasks"> </div>
+                <div class="container-tasks" id="todoTasks"> </div>
             </section>
             <!-- FinTablero - Tareas por hacer -->
 
             <!-- Tablero - Tareas en progreso   -->
             <section class="panel-tasks">
                 <h2 class="text-3xl font-bold pb-1"> En progreso</h2>
-                <div class="container-tasks h-full" id="progressTasks"></div>
+                <div class="container-tasks" id="progressTasks"></div>
             </section>
             <!-- Fin Tablero - Tareas en progreso   -->
 
             <!-- Tablero Tareas Finalizadas -->
             <section class="panel-tasks">
                 <h2 class="text-3xl font-bold pb-1">Finalizadas</h2>
-                <div class="container-tasks h-full" id="doneTasks"></div>
+                <div class="container-tasks" id="doneTasks"></div>
             </section>
             <!-- Fin Tablero Tareas Finalizadas -->
 
@@ -105,7 +108,7 @@
                         </div>
                         <div class="row">
                             <label for="detailsTask">Detalles :</label>
-                            <textarea class="w-auto" name="detailsTask" id="detailsTask">detalles de prueba</textarea>
+                            <textarea class="float-right" name="detailsTask" id="detailsTask" cols="40" rows="1">detalles de prueba</textarea>
                         </div>
 
                         <div class="row">
